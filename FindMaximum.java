@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class FindMaximum { // Find maximum number from the given list
-    public static Comparable findMaximumBetween3integers(ArrayList myNumList) {
+    public static Comparable findMaximumBetween3Values(ArrayList myNumList) {
         // To find max from the arraylist
         return Collections.max(myNumList);
     }
