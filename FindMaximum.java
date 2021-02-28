@@ -1,12 +1,10 @@
-import java.util.ArrayList;
-import java.util.Collections;
-
-public class FindMaximum { // Find maximum number from the given list
-    public static Comparable findMaximumBetween3integers(ArrayList myNumList) {
-        // To find max from the arraylist
-        return Collections.max(myNumList);
+public class FindMaximum { // Find maximum Integer value from the given list
+    public static int findMaximumBetween3Integer(int[] arrayInt) {
+        int max = arrayInt[0];
+        for(int index = 1; index < arrayInt.length; index++) {
+            if (arrayInt[index] > max)
+                max = arrayInt[index];
+        }
+        return max;
     }
-    public static void main(String[] args) {
-        System.out.println("Welcome to Test maximum Program");
-    }
-}
+}    
